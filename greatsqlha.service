@@ -1,0 +1,17 @@
+[Unit]
+Description=GreatSQLHA Service
+After=network.target
+After=syslog.target
+[Install]
+WantedBy=multi-user.target
+[Service]
+User=root
+Group=root
+Type=simple
+TimeoutSec=0
+PermissionsStartOnly=true
+ExecStart=/usr/bin/nohup PYTHON_PATH GreatSQLHA_INSTALL_PATH/GreatSQLHA.py
+LimitNOFILE = 10000
+Restart=on-failure
+RestartPreventExitStatus=1
+PrivateTmp=false

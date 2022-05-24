@@ -1,0 +1,8 @@
+GreatSQLHA_LOG_PATH/GreatSQLHA.log {
+    missingok
+    notifempty
+    rotate 1
+    daily
+    create
+    su root root
+}
