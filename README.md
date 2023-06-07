@@ -2,6 +2,8 @@
 
 [toc]
 
+**提醒**：GreatSQL 8.0.32-24版本开始支持在MGR的读写节点上绑定动态VIP以实现高可用，推荐升级到该版本，详情请参考：[GreatSQL中MGR支持内置vip特性](https://gitee.com/GreatSQL/GreatSQL-Doc/blob/master/relnotes/greatsql-803224/mgr-vip.md)。
+
 ## 0. 简介
 MGR集群高可用方案，基于VIP漂移机制。
 
